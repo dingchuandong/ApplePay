@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKs-1F-sn9">
+                                <rect key="frame" x="238" y="254" width="124" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="miO-T1-m0Q"/>
+                                    <constraint firstAttribute="height" constant="30" id="ueh-b8-Wfw"/>
+                                    <constraint firstAttribute="width" constant="124" id="wGf-tx-SDd"/>
+                                </constraints>
+                                <state key="normal" title="ApplePay"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="miO-T1-m0Q"/>
+                                        <exclude reference="ueh-b8-Wfw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="miO-T1-m0Q"/>
+                                        <include reference="ueh-b8-Wfw"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="Pay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ot-cL-EwY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZKs-1F-sn9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DPK-87-k4k"/>
+                            <constraint firstItem="ZKs-1F-sn9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Er0-VS-tNE"/>
+                            <constraint firstItem="ZKs-1F-sn9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PbM-Qh-Kmc"/>
+                            <constraint firstItem="ZKs-1F-sn9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QcP-vY-Jxp"/>
+                            <constraint firstItem="ZKs-1F-sn9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="234" id="qj1-vW-qut"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DPK-87-k4k"/>
+                                <exclude reference="Er0-VS-tNE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="DPK-87-k4k"/>
+                                <include reference="Er0-VS-tNE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ApplePay" destination="ZKs-1F-sn9" id="iw3-eY-ip6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
